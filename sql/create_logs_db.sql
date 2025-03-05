@@ -18,6 +18,7 @@ CREATE TABLE logs (
     user_id INT,
     space_type_id INT,
     event_type_id INT,
+    target_id INT,
 
     CONSTRAINT logs_pk PRIMARY KEY (id),
     CONSTRAINT logs_space_type_fk FOREIGN KEY (space_type_id) REFERENCES space_type,
