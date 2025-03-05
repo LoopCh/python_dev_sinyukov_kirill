@@ -1,0 +1,7 @@
+{
+  "DB_NAME": "authors_database",
+  "DB_USER": "farpost",
+  "DB_PASSWORD": "admin",
+  "DB_HOST": "localhost",
+  "DB_PORT": 5432
+  }
