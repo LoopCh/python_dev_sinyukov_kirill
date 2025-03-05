@@ -40,7 +40,7 @@ def populate_space_type(conn):
 
     conn.commit()
     cursor.close()
-    conn.close()
+
 
 def populate_event_type(conn):
     """
@@ -55,7 +55,7 @@ def populate_event_type(conn):
 
     conn.commit()
     cursor.close()
-    conn.close()
+
 
 def populate_logs(conn):
     """
@@ -92,7 +92,7 @@ def populate_logs(conn):
 
     conn.commit()
     cursor.close()
-    conn.close()
+
 
 
 if __name__ == "__main__":
@@ -110,3 +110,5 @@ if __name__ == "__main__":
     populate_space_type(conn)
     populate_event_type(conn)
     populate_logs(conn)
+
+    conn.close()

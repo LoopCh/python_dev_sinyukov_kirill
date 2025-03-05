@@ -44,6 +44,9 @@ def populate_blog(conn):
         blogs.append((blog_id, owner_id, name, description))
     cursor.executemany("INSERT INTO blog (id, owner_id, name, description) VALUES (%s, %s, %s, %s)", blogs)
 
+    conn.commit()
+    cursor.close()
+
 
 def populate_users(conn):
     """
@@ -65,7 +68,6 @@ def populate_users(conn):
 
     conn.commit()
     cursor.close()
-    conn.close()
 
 
 
@@ -89,7 +91,6 @@ def populate_post(conn):
 
     conn.commit()
     cursor.close()
-    conn.close()
 
 
 if __name__ == '__main__':
@@ -104,6 +105,8 @@ if __name__ == '__main__':
         port=params['DB_PORT']
     )
 
-    populate_blog(conn)
     populate_users(conn)
+    populate_blog(conn)
     populate_post(conn)
+
+    conn.close()
