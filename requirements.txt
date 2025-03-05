@@ -1,6 +1,8 @@
-psycopg2~=2.9.10
-Faker~=35.2.2
 uvicorn~=0.33.0
 pandas~=2.0.3
 fastapi~=0.115.11
 SQLAlchemy~=2.0.38
+psycopg2~=2.9.10
+Faker~=35.2.2
+asyncpg~=0.30.0
+numpy~=2.2.3
