@@ -106,4 +106,7 @@ if __name__ == "__main__":
         host=params['DB_HOST'],
         port=params['DB_PORT']
     )
+
+    populate_space_type(conn)
+    populate_event_type(conn)
     populate_logs(conn)
