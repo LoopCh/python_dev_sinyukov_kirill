@@ -19,10 +19,11 @@
 
 
 ## Описание
-Этот проект демонстрирует работу с базой данных PostgreSQL. Он включает в себя: 
+Этот проект демонстрирует работу с базой данных PostgreSQL и получение двух dataset по двум endpoint. Он включает в себя: 
 - Создание баз данных `author_database` и `logs_database`
 - Создание таблиц `users`, `blog`, `post` для `author_database`, `logs`, `space_type`, `event_type` для `logs_database`
 - Заполнение таблиц случайными данными (параметры подключений к базам находятся в файлах `populate_authors_db.py` и `populate_logs_db.py`).
+- Получение dataset comments и dataset general по двум endpoint.
 
 ## Установка и запуск
 1. Установите зависимости:
